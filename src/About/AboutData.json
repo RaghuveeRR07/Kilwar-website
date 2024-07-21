@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1, "name": "Blockchain", "description": "Description", "image": "https://cdn.corporatefinanceinstitute.com/assets/AdobeStock_280230556-scaled.jpeg" 
+    },
+    {
+        "id": 2, "name": "Artificial Intelligence", "description": "Description", "image": "https://cioafrica.co/wp-content/uploads/2024/01/AI.jpg" 
+    },
+    {
+        "id": 3, "name": "E-commerce", "description": "Description", "image": "https://st.depositphotos.com/1001877/3814/i/450/depositphotos_38143799-stock-photo-e-commerce-shopping-cart-with.jpg" 
+    },
+    {
+        "id": 4, "name": "Mobile Applications", "description": "Description", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX5_dV9AbAvL6r7V5EPS-Eq5FCbjG5BBU55w&s" 
+    }
+]
