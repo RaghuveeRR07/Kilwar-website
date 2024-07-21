@@ -1,47 +1,54 @@
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 export const AboutLinks = () => {
   return (
     <section className="bg-#000435 p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
-        <Link
+        <Link to='/Services#blockchain'><AboutLink
           heading="Blockchain"
           subheading="Learn what we do here"
           imgSrc="https://cdn.corporatefinanceinstitute.com/assets/AdobeStock_280230556-scaled.jpeg"
-          href="#"
-        />
-        <Link
+          href="Hero2.jsx#blockchain"
+        /></Link>
+        <Link to='/Services#ai'><AboutLink 
           heading="AI"
           subheading="We work with great people"
           imgSrc="https://cioafrica.co/wp-content/uploads/2024/01/AI.jpg"
-          href="#"
-        />
-        <Link
+            // href="/Services#timepass"
+        ></AboutLink>
+        </Link>
+        <Link to='/Services#ecommerce'>
+        <AboutLink
           heading="E-commerce"
           subheading="Our work speaks for itself"
           imgSrc="https://st.depositphotos.com/1001877/3814/i/450/depositphotos_38143799-stock-photo-e-commerce-shopping-cart-with.jpg"
-          href="#"
+        //   href="#"
         />
-        <Link
+        </Link>
+        <Link to='/Services#mobileApps'>
+        <AboutLink
           heading="Mobile-Applications"
           subheading="We want cool people"
           imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX5_dV9AbAvL6r7V5EPS-Eq5FCbjG5BBU55w&s"
-          href="#"
-        />
-        <Link
+        //   href="#"
+        /></Link>
+        <AboutLink
           heading="Fun"
           subheading="Incase you're bored"
           imgSrc="https://t4.ftcdn.net/jpg/02/66/31/75/360_F_266317554_kr7DPOoM5Uty0YCeFU9nDZTt4a2LeMJF.jpg"
-          href="#"
+        //   href="/#"
         />
+
       </div>
+
     </section>
   );
 };
 
-const Link = ({ heading, imgSrc, subheading, href }) => {
+const AboutLink = ({ heading, imgSrc, subheading, href }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -124,7 +131,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         transition={{ type: "spring" }}
         src={imgSrc}
         className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
-        alt={`Image representing a link for ${heading}`}
+        alt={`Image representing a AboutLink for ${heading}`}
       />
 
       <motion.div

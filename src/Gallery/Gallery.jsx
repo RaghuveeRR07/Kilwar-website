@@ -10,6 +10,9 @@ function Gallery() {
       </h2>
         </div>
         <GalleryCarousal/>
+        <div id="timepass">
+            Hello World
+          </div>
     </div>
   )
 }

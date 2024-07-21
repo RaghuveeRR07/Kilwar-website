@@ -13,7 +13,7 @@ function Home() {
     <ShuffleHero/>
     <HomeProjects/>
     
-
+    
     </>
   )
 }
